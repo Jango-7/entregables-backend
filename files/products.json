@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Kipitos",
+    "description": "Azucar explosiva",
+    "price": 500,
+    "thumbnail": "imagen01",
+    "code": "k001",
+    "stock": 1500
+  },
+  {
+    "id": 2,
+    "title": "Bonbonbum",
+    "description": "Chupetin de sabores",
+    "price": 300,
+    "thumbnail": "imagen02",
+    "code": "k002",
+    "stock": 1500
+  },
+  {
+    "id": 3,
+    "title": "Choclitos",
+    "description": "Tortillas de maiz sabor limón",
+    "price": 1800,
+    "thumbnail": "imagen03",
+    "code": "k003",
+    "stock": 800
+  },
+  {
+    "id": 4,
+    "title": "Chocorramo",
+    "description": "Bizcocho cubierto de chocolate",
+    "price": 1200,
+    "thumbnail": "imagen04",
+    "code": "k004",
+    "stock": 600
+  }
+]
