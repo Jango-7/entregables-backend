@@ -1,6 +1,16 @@
-const fs = require("fs")
+// const http = require('http')
+// const server = http.createServer((request, response) => {
+//     response.end('Mi primer hola mundo actual con nodemon')
+// })
+// server.listen(8080, () => {
+//     console.log('Server run on port: 8080');
+// })
 
-class ProductManager {
+// =====================
+
+import fs from "fs"
+
+export class ProductManager {
     constructor(path) {
         this.path = path,
             this.products = [
@@ -12,6 +22,7 @@ class ProductManager {
         const productListParse = JSON.parse(productList)
         return productListParse
     }
+
     //GENERATE ID 
     generateId = async () => {
         const counter = this.products.length
@@ -22,6 +33,7 @@ class ProductManager {
             return (this.products[counter - 1].id) + 1
         }
     }
+    
     //CREATE
     addProduct = async (title, description, price, thumbnail, code, stock) => {
         if (!title || !description || !price || !thumbnail || !code || !stock) {
@@ -101,23 +113,23 @@ class ProductManager {
 
 }
 
-async function generator() {
+// async function generator() {
 
-    const productManager = new ProductManager("./files/products.json");
+//     const productManager = new ProductManager("./files/products.json");
 
-    await productManager.addProduct('Kipitos', 'Azucar explosiva', 500, 'imagen01', 'k001', 1500)
-    await productManager.addProduct('Bonbonbum', 'Chupetin de sabores', 300, 'imagen02', 'k002', 1500)
-    await productManager.addProduct('Choclitos', 'Tortillas de maiz sabor limón', 1800, 'imagen03', 'k003', 800)
-    await productManager.addProduct('Chocorramo', 'Bizcocho cubierto de chocolate', 1200, 'imagen04', 'k004', 600)
+//     await productManager.addProduct('Kipitos', 'Azucar explosiva', 500, 'imagen01', 'k001', 1500)
+//     await productManager.addProduct('Bonbonbum', 'Chupetin de sabores', 300, 'imagen02', 'k002', 1500)
+//     await productManager.addProduct('Choclitos', 'Tortillas de maiz sabor limón', 1800, 'imagen03', 'k003', 800)
+//     await productManager.addProduct('Chocorramo', 'Bizcocho cubierto de chocolate', 1200, 'imagen04', 'k004', 600)
 
-    // await productManager.updateProduct(3, "Alqueria", "Leche descremada", 1500, "imagen05", "k005", 500)
+//     // await productManager.updateProduct(3, "Alqueria", "Leche descremada", 1500, "imagen05", "k005", 500)
 
-    // await productManager.deleteProduct(2)
+//     // await productManager.deleteProduct(2)
 
-    // const solo = await productManager.getProductbyId(1)
+//     // const solo = await productManager.getProductbyId(1)
 
-    const listado = await productManager.getProducts()
-    console.log(listado)
-}
+//     const listado = await productManager.getProducts()
+//     console.log(listado)
+// }
 
-generator()
+// generator()

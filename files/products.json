@@ -34,5 +34,59 @@
     "thumbnail": "imagen04",
     "code": "k004",
     "stock": 600
+  },
+  {
+    "id": 5,
+    "title": "Bubble",
+    "description": "Zaraza",
+    "price": 1200,
+    "thumbnail": "imagen04",
+    "code": "k005",
+    "stock": 600
+  },
+  {
+    "id": 6,
+    "title": "Hershey's",
+    "description": "Zaraza",
+    "price": 1200,
+    "thumbnail": "imagen04",
+    "code": "k006",
+    "stock": 600
+  },
+  {
+    "id": 7,
+    "title": "Deditos",
+    "description": "Zaraza",
+    "price": 1200,
+    "thumbnail": "imagen04",
+    "code": "k007",
+    "stock": 600
+  },
+  {
+    "id": 8,
+    "title": "Cheese treese",
+    "description": "Zaraza",
+    "price": 1200,
+    "thumbnail": "imagen04",
+    "code": "k008",
+    "stock": 600
+  },
+  {
+    "id": 9,
+    "title": "Yupi's",
+    "description": "Zaraza",
+    "price": 1200,
+    "thumbnail": "imagen04",
+    "code": "k009",
+    "stock": 600
+  },
+  {
+    "id": 10,
+    "title": "Papas Lays",
+    "description": "Zaraza",
+    "price": 1200,
+    "thumbnail": "imagen04",
+    "code": "k0010",
+    "stock": 600
   }
 ]
